@@ -1,0 +1,25 @@
+[*]
+[*] GTKWave Analyzer v3.3.103 (w)1999-2019 BSI
+[*] Sun Aug 14 11:58:18 2022
+[*]
+[dumpfile] "/home/linjw16/E/Program_Files/prj/utilities/verilog/rtl/nowcoder/out.vcd"
+[dumpfile_mtime] "Sun Aug 14 11:58:14 2022"
+[dumpfile_size] 912
+[savefile] "/home/linjw16/E/Program_Files/prj/utilities/verilog/rtl/nowcoder/temp.gtkw"
+[timestart] 0
+[size] 3664 2018
+[pos] 176 0
+*-13.000000 42000 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1
+[treeopen] testbench.
+[sst_width] 466
+[signals_width] 310
+[sst_expanded] 1
+[sst_vpaned_height] 599
+@28
+testbench.dut.arst_n
+testbench.dut.arst_n_reg
+testbench.dut.clk
+testbench.dut.d
+testbench.dut.dout
+[pattern_trace] 1
+[pattern_trace] 0

@@ -1,0 +1,42 @@
+[*]
+[*] GTKWave Analyzer v3.3.103 (w)1999-2019 BSI
+[*] Tue Jul 26 10:42:51 2022
+[*]
+[dumpfile] "/home/linjw16/E/Program_Files/prj/utilities/verilog/tb/serial_fsm/top_module.fst"
+[dumpfile_mtime] "Tue Jul 26 10:42:04 2022"
+[dumpfile_size] 1023
+[savefile] "/home/linjw16/E/Program_Files/prj/utilities/verilog/tb/serial_fsm/temp.gtkw"
+[timestart] 0
+[size] 3664 2018
+[pos] -1 -1
+*-13.000000 11260 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1
+[sst_width] 466
+[signals_width] 330
+[sst_expanded] 1
+[sst_vpaned_height] 599
+@28
+top_module.clk
+top_module.count_next[2:0]
+top_module.count_reg[2:0]
+top_module.done_next
+top_module.done_reg
+top_module.in_1
+@22
+top_module.out_byte[7:0]
+top_module.out_next[7:0]
+top_module.out_reg[7:0]
+@28
+top_module.parit_next
+top_module.parit_reg
+@22
+top_module.state_next[3:0]
+@29
+top_module.reset
+@28
+top_module.in
+@22
+top_module.state_reg[3:0]
+@28
+top_module.done
+[pattern_trace] 1
+[pattern_trace] 0

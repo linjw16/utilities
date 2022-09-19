@@ -1,0 +1,1527 @@
+make all --print-data-base --no-builtin-variables --no-builtin-rules --question
+make -C tb/. all
+ 
+# make[1]: Entering directory '/home/linjw16/E/Program_Files/prj/utilities/verilog/tb'
+make -C fsm_hdlc/. all
+ 
+# make[2]: Entering directory '/home/linjw16/E/Program_Files/prj/utilities/verilog/tb/fsm_hdlc'
+ 
+# GNU Make 4.2.1
+# Built for x86_64-pc-linux-gnu
+# Copyright (C) 1988-2016 Free Software Foundation, Inc.
+# License GPLv3+: GNU GPL version 3 or later <http://gnu.org/licenses/gpl.html>
+# This is free software: you are free to change and redistribute it.
+# There is NO WARRANTY, to the extent permitted by law.
+ 
+
+# Make data base, printed on Thu Sep  8 14:48:27 2022
+
+# Variables
+
+# automatic
+<D = $(patsubst %/,%,$(dir $<))
+# automatic
+?F = $(notdir $?)
+# environment
+DESKTOP_SESSION = ubuntu
+# default
+.SHELLFLAGS := -c
+# environment
+XDG_SESSION_CLASS = user
+# makefile (from '/usr/local/lib/python3.8/dist-packages/cocotb/share/makefiles/Makefile.inc', line 141)
+FIND_LIBPYTHON_RC := 0
+# environment
+XDG_SESSION_TYPE = x11
+# makefile (from '/usr/local/lib/python3.8/dist-packages/cocotb/share/makefiles/Makefile.inc', line 160)
+check_lib_order =   if [ "$(filter $(SOURCES_VAR:VHDL_SOURCES_%=%), $(VHDL_LIB_ORDER))" == "" ]; then >&2 echo "ERROR: $(SOURCES_VAR) defined, but library $(SOURCES_VAR:VHDL_SOURCES_%=%) not present in VHDL_LIB_ORDER."; exit 1; fi;
+# automatic
+?D = $(patsubst %/,%,$(dir $?))
+# automatic
+@D = $(patsubst %/,%,$(dir $@))
+# environment
+XAUTHORITY = /home/linjw16/.Xauthority
+# environment
+GDMSESSION = ubuntu
+# environment
+XMODIFIERS = @im=ibus
+# makefile (from 'Makefile', line 19)
+DUT = fsm_hdlc
+# makefile
+CURDIR := /home/linjw16/E/Program_Files/prj/utilities/verilog/tb/fsm_hdlc
+# makefile (from 'Makefile', line 17)
+COCOTB_HDL_TIMEPRECISION = 1ps
+# makefile (from '/usr/local/lib/python3.8/dist-packages/cocotb/share/makefiles/Makefile.inc', line 43)
+SHELL := bash
+# environment
+GDM_LANG = zh_CN
+# environment
+VSCODE_NLS_CONFIG = {"locale":"zh-cn","availableLanguages":{"*":"zh-cn"},"_languagePackId":"a1516064f4f46f2a618c351c3fa99660.zh-cn","_translationsConfigFile":"/home/linjw16/.config/Code/clp/a1516064f4f46f2a618c351c3fa99660.zh-cn/tcf.json","_cacheRoot":"/home/linjw16/.config/Code/clp/a1516064f4f46f2a618c351c3fa99660.zh-cn","_resolvedLanguagePackCoreLocation":"/home/linjw16/.config/Code/clp/a1516064f4f46f2a618c351c3fa99660.zh-cn/784b0177c56c607789f9638da7b6bf3230d47a8c","_corruptedFile":"/home/linjw16/.config/Code/clp/a1516064f4f46f2a618c351c3fa99660.zh-cn/corrupted.info","_languagePackSupport":true}
+# makefile (from '/usr/local/lib/python3.8/dist-packages/cocotb/share/makefiles/Makefile.sim', line 106)
+HAVE_SIMULATOR = $(shell if [ -f $(COCOTB_MAKEFILES_DIR)/simulators/Makefile.$(SIM_LOWERCASE) ]; then echo 1; else echo 0; fi;)
+# environment
+_ = /usr/share/code/code
+# environment
+JOURNAL_STREAM = 8:311015
+# environment
+XDG_CONFIG_DIRS = /etc/xdg/xdg-ubuntu:/etc/xdg
+# makefile (from '/usr/local/lib/python3.8/dist-packages/cocotb/share/makefiles/Makefile.inc', line 46)
+COCOTB_PY_DIR := /usr/local/lib/python3.8/dist-packages
+# makefile (from '/usr/local/lib/python3.8/dist-packages/cocotb/share/makefiles/Makefile.deprecations', line 1)
+MAKEFILE_LIST :=  Makefile /usr/local/lib/python3.8/dist-packages/cocotb/share/makefiles/Makefile.sim /usr/local/lib/python3.8/dist-packages/cocotb/share/makefiles/Makefile.deprecations /usr/local/lib/python3.8/dist-packages/cocotb/share/makefiles/simulators/Makefile.icarus /usr/local/lib/python3.8/dist-packages/cocotb/share/makefiles/Makefile.inc /usr/local/lib/python3.8/dist-packages/cocotb/share/makefiles/Makefile.deprecations
+# makefile (from '/usr/local/lib/python3.8/dist-packages/cocotb/share/makefiles/Makefile.inc', line 66)
+LIB_DIR = $(COCOTB_PY_DIR)/cocotb/libs
+# automatic
+@F = $(notdir $@)
+# environment
+IM_CONFIG_PHASE = 1
+# 'override' directive
+GNUMAKEFLAGS := 
+# environment
+XDG_DATA_DIRS = /usr/share/ubuntu:/usr/local/share/:/usr/share/
+# environment
+DBUS_SESSION_BUS_ADDRESS = unix:path=/run/user/1000/bus
+# environment
+MANAGERPID = 1279
+# environment
+LESSOPEN = | /usr/bin/lesspipe %s
+# environment
+VSCODE_CWD = /home/linjw16
+# environment
+XDG_SESSION_PATH = /org/freedesktop/DisplayManager/Session1
+# default
+MAKE_HOST := x86_64-pc-linux-gnu
+# environment
+PATH = /home/linjw16/.local/bin:/home/linjw16/.local/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin:/home/linjw16/文档/OpenROAD/build/src/:/home/linjw16/文档/OpenROAD/build/src/
+# makefile (from '/usr/local/lib/python3.8/dist-packages/cocotb/share/makefiles/Makefile.inc', line 125)
+define find_libpython_errmsg
+
+
+find_libpython was not able to find a libpython in the current Python environment. Ensure
+the Python development packages are installed. If they are installed and find_libpython
+is not finding the path to libpython, file an upstream bug in find_libpython; then
+manually override the LIBPYTHON_LOC make variable with the absolute path to libpython.so
+(or python.dll on Windows).
+
+endef
+# environment
+GPG_AGENT_INFO = /run/user/1000/gnupg/S.gpg-agent:0:1
+# environment
+SESSION_MANAGER = local/dell:@/tmp/.ICE-unix/17345,unix/dell:/tmp/.ICE-unix/17345
+# environment
+XDG_RUNTIME_DIR = /run/user/1000
+# makefile (from '/usr/local/lib/python3.8/dist-packages/cocotb/share/makefiles/Makefile.inc', line 68)
+PYTHON_ARCH := 64bit
+# makefile (from '/usr/local/lib/python3.8/dist-packages/cocotb/share/makefiles/Makefile.sim', line 99)
+SIM_LOWERCASE := icarus
+# makefile (from '/usr/local/lib/python3.8/dist-packages/cocotb/share/makefiles/Makefile.inc', line 79)
+to_tcl_path = $(1)
+# makefile (from 'Makefile', line 16)
+COCOTB_HDL_TIMEUNIT = 1ns
+# environment
+XDG_MENU_PREFIX = gnome-
+# makefile (from 'Makefile', line 29)
+PLUSARGS = -fst
+# environment
+ELECTRON_RUN_AS_NODE = 1
+# environment
+INVOCATION_ID = b07d9ca5dc084c6caee54fc454b7277e
+# makefile (from '/usr/local/lib/python3.8/dist-packages/cocotb/share/makefiles/Makefile.sim', line 107)
+AVAILABLE_SIMULATORS = $(patsubst .%,%,$(suffix $(wildcard $(COCOTB_MAKEFILES_DIR)/simulators/Makefile.*)))
+# default
+.FEATURES := target-specific order-only second-expansion else-if shortest-stem undefine oneshell archives jobserver output-sync check-symlink load
+# makefile (from '/usr/local/lib/python3.8/dist-packages/cocotb/share/makefiles/Makefile.inc', line 74)
+PYTHONHOME := /usr
+# environment
+XDG_GREETER_DATA_DIR = /var/lib/lightdm-data/linjw16
+# environment
+LS_COLORS = 
+# environment
+XDG_SESSION_DESKTOP = ubuntu
+# environment
+SSH_AUTH_SOCK = /run/user/1000/keyring/ssh
+# environment
+GIO_LAUNCHED_DESKTOP_FILE_PID = 37681
+# automatic
+%F = $(notdir $%)
+# environment
+DISPLAY = :0
+# makefile (from '/usr/local/lib/python3.8/dist-packages/cocotb/share/makefiles/simulators/Makefile.icarus', line 55)
+ICARUS_BIN_DIR := /usr/bin
+# makefile (from '/usr/local/lib/python3.8/dist-packages/cocotb/share/makefiles/Makefile.inc', line 153)
+check_vhdl_sources = if [ "$(VHDL_SOURCES_$(LIB))" == "" ]; then >&2 echo "ERROR: VHDL_SOURCES_$(LIB) is empty or undefined, but '$(LIB)' is present in VHDL_LIB_ORDER."; exit 1; fi;
+# makefile (from 'Makefile', line 11)
+TOPLEVEL_LANG = verilog
+# makefile (from '/usr/local/lib/python3.8/dist-packages/cocotb/share/makefiles/Makefile.inc', line 142)
+LIBPYTHON_LOC := /usr/lib/x86_64-linux-gnu/libpython3.8.so.1.0
+# environment
+PWD = /home/linjw16/E/Program_Files/prj/utilities/verilog
+# default
+.LOADED := 
+# environment
+SSH_AGENT_PID = 17282
+# environment
+ORIGINAL_XDG_CURRENT_DESKTOP = ubuntu:GNOME
+# environment
+GTK_MODULES = gail:atk-bridge
+# makefile (from '/usr/local/lib/python3.8/dist-packages/cocotb/share/makefiles/Makefile.inc', line 90)
+COCOTB_RESULTS_FILE = results.xml
+# environment
+VSCODE_AMD_ENTRYPOINT = vs/workbench/api/node/extensionHostProcess
+# environment
+HOME = /home/linjw16
+# makefile (from '/usr/local/lib/python3.8/dist-packages/cocotb/share/makefiles/Makefile.inc', line 50)
+COCOTB_SHARE_DIR := /usr/local/lib/python3.8/dist-packages/cocotb/share
+# makefile (from '/usr/local/lib/python3.8/dist-packages/cocotb/share/makefiles/Makefile.inc', line 83)
+check_for_results_file =     @test -f $(COCOTB_RESULTS_FILE) || (echo "ERROR: $(COCOTB_RESULTS_FILE) was not written by the simulation!" >&2 && exit 1)
+# environment
+LESSCLOSE = /usr/bin/lesspipe %s %s
+# environment
+VSCODE_CODE_CACHE_PATH = /home/linjw16/.config/Code/CachedData/784b0177c56c607789f9638da7b6bf3230d47a8c
+# environment
+LOGNAME = linjw16
+# environment
+APPLICATION_INSIGHTS_NO_DIAGNOSTIC_CHANNEL = 1
+# makefile (from '/usr/local/lib/python3.8/dist-packages/cocotb/share/makefiles/Makefile.sim', line 36)
+define help_targets
+Targets
+=======
+sim                       Unconditionally re-run the simulator (default)
+regression                Run simulator when dependencies have changes
+clean                     Remove build and simulation artefacts
+help                      This help text
+
+endef
+# makefile (from '/usr/local/lib/python3.8/dist-packages/cocotb/share/makefiles/Makefile.inc', line 140)
+FIND_LIBPYTHON_RES := /usr/lib/x86_64-linux-gnu/libpython3.8.so.1.0 0
+# makefile (from 'Makefile', line 20)
+TOPLEVEL = top_module
+# environment
+VSCODE_HANDLES_UNCAUGHT_ERRORS = true
+# environment
+GNOME_DESKTOP_SESSION_ID = this-is-deprecated
+# automatic
+^D = $(patsubst %/,%,$(dir $^))
+# makefile (from 'Makefile', line 14)
+WAVES = 0
+# environment
+MAKELEVEL := 2
+# makefile (from '/usr/local/lib/python3.8/dist-packages/cocotb/share/makefiles/Makefile.inc', line 33)
+COCOTB_MAKEFILE_INC_INCLUDED = 1
+# makefile (from 'Makefile', line 21)
+MODULE = testbench
+# default
+MAKE = $(MAKE_COMMAND)
+# default
+MAKECMDGOALS := all
+# environment
+QT_IM_MODULE = ibus
+# makefile (from '/usr/local/lib/python3.8/dist-packages/cocotb/share/makefiles/simulators/Makefile.icarus', line 60)
+TOPMODULE_ARG := -s top_module
+# environment
+SHLVL = 0
+# makefile (from 'Makefile', line 13)
+SIM = icarus
+# environment
+GNOME_SHELL_SESSION_MODE = ubuntu
+# default
+MAKE_VERSION := 4.2.1
+# environment
+USER = linjw16
+# makefile
+.DEFAULT_GOAL := all
+# environment
+XDG_CURRENT_DESKTOP = Unity
+# makefile (from '/usr/local/lib/python3.8/dist-packages/cocotb/share/makefiles/simulators/Makefile.icarus', line 49)
+CMD := /usr/bin/iverilog
+# automatic
+%D = $(patsubst %/,%,$(dir $%))
+# makefile (from '/usr/local/lib/python3.8/dist-packages/cocotb/share/makefiles/simulators/Makefile.icarus', line 43)
+CMD_BIN := iverilog
+# default
+MAKE_COMMAND := make
+# makefile (from '/usr/local/lib/python3.8/dist-packages/cocotb/share/makefiles/Makefile.inc', line 101)
+CUSTOM_SIM_DEPS = $(shell find $(COCOTB_PY_DIR)/cocotb/ -name "*.py") $(shell find $(LIB_DIR)/ -name "*")
+# makefile (from '/usr/local/lib/python3.8/dist-packages/cocotb/share/makefiles/Makefile.inc', line 87)
+SIM_BUILD = sim_build
+# default
+.VARIABLES := 
+# automatic
+*F = $(notdir $*)
+# environment
+LANGUAGE = zh_CN:zh
+# environment
+XDG_SEAT_PATH = /org/freedesktop/DisplayManager/Seat0
+# makefile (from '/usr/local/lib/python3.8/dist-packages/cocotb/share/makefiles/Makefile.inc', line 52)
+OS = $(shell uname)
+# environment
+VSCODE_IPC_HOOK = /run/user/1000/vscode-b7ca5a55-1.71.0-main.sock
+# makefile
+ 
+MAKEFLAGS = pqrRw
+# environment
+MFLAGS = -pqrRw
+# automatic
+*D = $(patsubst %/,%,$(dir $*))
+# makefile (from 'Makefile', line 23)
+VERILOG_SOURCES = ../../rtl/$(DUT).v
+# automatic
++D = $(patsubst %/,%,$(dir $+))
+# environment
+GDK_BACKEND = x11
+# makefile (from '/usr/local/lib/python3.8/dist-packages/cocotb/share/makefiles/Makefile.sim', line 102)
+COCOTB_MAKEFILES_DIR := /usr/local/lib/python3.8/dist-packages/cocotb/share/makefiles
+# automatic
++F = $(notdir $+)
+# makefile (from 'Makefile', line 26)
+PARAM_DUMMY = 1
+# makefile (from '/usr/local/lib/python3.8/dist-packages/cocotb/share/makefiles/simulators/Makefile.icarus', line 65)
+COMPILE_ARGS = -P $(TOPLEVEL).DUMMY=$(PARAM_DUMMY) -f $(SIM_BUILD)/cmds.f -g2012 
+# environment
+QT_ACCESSIBILITY = 1
+# 'override' directive
+.SHELLSTATUS := 0
+# default
+MAKEFILES := 
+# automatic
+<F = $(notdir $<)
+# makefile (from '/usr/local/lib/python3.8/dist-packages/cocotb/share/makefiles/Makefile.sim', line 78)
+define newline
+
+
+endef
+# makefile (from '/usr/local/lib/python3.8/dist-packages/cocotb/share/makefiles/Makefile.sim', line 47)
+define help_makevars
+Variables
+=========
+
+The following variables are makefile variables:
+
+Makefile-based Test Scripts
+---------------------------
+GUI                       Set this to 1 to enable the GUI mode in the simulator
+SIM                       Selects which simulator Makefile to use
+WAVES                     Enable wave traces dump for Riviera-PRO and Questa
+VERILOG_SOURCES           A list of the Verilog source files to include
+VHDL_SOURCES              A list of the VHDL source files to include
+VHDL_SOURCES_<lib>        VHDL source files to include in *lib* (GHDL/ModelSim/Questa/Xcelium only)
+VHDL_LIB_ORDER            Compilation order of VHDL libraries (needed for ModelSim/Questa/Xcelium)
+SIM_CMD_PREFIX            Prefix for simulation command invocations
+COMPILE_ARGS              Arguments to pass to compile stage of simulation
+SIM_ARGS                  Arguments to pass to execution of compiled simulation
+EXTRA_ARGS                Arguments for compile and execute phases
+PLUSARGS                  Plusargs to pass to the simulator
+COCOTB_HDL_TIMEUNIT       Default time unit for simulation
+COCOTB_HDL_TIMEPRECISION  Default time precision for simulation
+CUSTOM_COMPILE_DEPS       Add additional dependencies to the compilation target
+CUSTOM_SIM_DEPS           Add additional dependencies to the simulation target
+SIM_BUILD                 Define a scratch directory for use by the simulator
+SCRIPT_FILE               Simulator script to run (for e.g. wave traces)
+
+endef
+# makefile (from '/usr/local/lib/python3.8/dist-packages/cocotb/share/makefiles/Makefile.inc', line 62)
+PYTHON_BIN = $(realpath $(shell cocotb-config --python-bin))
+# environment
+LC_ALL = C
+# environment
+GJS_DEBUG_TOPICS = JS ERROR;JS LOG
+# automatic
+^F = $(notdir $^)
+# default
+SUFFIXES := 
+# environment
+CHROME_DESKTOP = code-url-handler.desktop
+# default
+.INCLUDE_DIRS = /usr/include /usr/local/include /usr/include
+# environment
+GJS_DEBUG_OUTPUT = stderr
+# default
+.RECIPEPREFIX := 
+# environment
+GIO_LAUNCHED_DESKTOP_FILE = /usr/share/applications/code.desktop
+# environment
+LANG = C
+# environment
+VSCODE_PID = 37681
+# variable set hash-table stats:
+# Load=138/1024=13%, Rehash=0, Collisions=17/342=5%
+
+# Pattern-specific Variable Values
+
+# No pattern-specific variable values.
+
+# Directories
+
+# . (device 2065, inode 146071): 10 files, no impossibilities.
+
+# 10 files, no impossibilities in 1 directories.
+
+# Implicit Rules
+
+# No implicit rules.
+
+# Files
+
+# Not a target:
+/usr/local/lib/python3.8/dist-packages/cocotb/libs/libgpilog.so:
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+
+# Not a target:
+/usr/local/lib/python3.8/dist-packages/cocotb/libs/libcocotbvpi_verilator.so:
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+
+# Not a target:
+/usr/local/lib/python3.8/dist-packages/cocotb/libs/libcocotbvhpi_ius.so:
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+
+# Not a target:
+/usr/local/lib/python3.8/dist-packages/cocotb/utils.py:
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+
+# Not a target:
+/usr/local/lib/python3.8/dist-packages/cocotb/decorators.py:
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+
+# Not a target:
+/usr/local/lib/python3.8/dist-packages/cocotb/libs/libcocotbvpi_modelsim.so:
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+
+# Not a target:
+/usr/local/lib/python3.8/dist-packages/cocotb/ANSI.py:
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+
+all: sim
+#  Phony target (prerequisite of .PHONY).
+#  Command line target.
+#  Implicit rule search has not been done.
+#  File does not exist.
+#  File has been updated.
+#  Needs to be updated (-q is set).
+# variable set hash-table stats:
+# Load=0/32=0%, Rehash=0, Collisions=0/8=0%
+
+# Not a target:
+/usr/local/lib/python3.8/dist-packages/cocotb/libs/libcocotbvhpi_aldec.so:
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+
+.PHONY: all sim regression
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+
+# Not a target:
+/usr/local/lib/python3.8/dist-packages/cocotb/_vendor/find_libpython/_version.py:
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+
+# Not a target:
+/usr/local/lib/python3.8/dist-packages/cocotb/libs/libgpi.so:
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+
+results.xml: sim_build/sim.vvp /usr/local/lib/python3.8/dist-packages/cocotb/config.py /usr/local/lib/python3.8/dist-packages/cocotb/log.py /usr/local/lib/python3.8/dist-packages/cocotb/binary.py /usr/local/lib/python3.8/dist-packages/cocotb/clock.py /usr/local/lib/python3.8/dist-packages/cocotb/utils.py /usr/local/lib/python3.8/dist-packages/cocotb/handle.py /usr/local/lib/python3.8/dist-packages/cocotb/_py_compat.py /usr/local/lib/python3.8/dist-packages/cocotb/scheduler.py /usr/local/lib/python3.8/dist-packages/cocotb/triggers.py /usr/local/lib/python3.8/dist-packages/cocotb/regression.py /usr/local/lib/python3.8/dist-packages/cocotb/__init__.py /usr/local/lib/python3.8/dist-packages/cocotb/ipython_support.py /usr/local/lib/python3.8/dist-packages/cocotb/xunit_reporter.py /usr/local/lib/python3.8/dist-packages/cocotb/wavedrom.py /usr/local/lib/python3.8/dist-packages/cocotb/_vendor/find_libpython/__main__.py /usr/local/lib/python3.8/dist-packages/cocotb/_vendor/find_libpython/__init__.py /usr/local/lib/python3.8/dist-packages/cocotb/_vendor/find_libpython/_version.py /usr/local/lib/python3.8/dist-packages/cocotb/_vendor/__init__.py /usr/local/lib/python3.8/dist-packages/cocotb/_vendor/distutils_version.py /usr/local/lib/python3.8/dist-packages/cocotb/outcomes.py /usr/local/lib/python3.8/dist-packages/cocotb/decorators.py /usr/local/lib/python3.8/dist-packages/cocotb/ANSI.py /usr/local/lib/python3.8/dist-packages/cocotb/_sim_versions.py /usr/local/lib/python3.8/dist-packages/cocotb/types/range.py /usr/local/lib/python3.8/dist-packages/cocotb/types/logic.py /usr/local/lib/python3.8/dist-packages/cocotb/types/array.py /usr/local/lib/python3.8/dist-packages/cocotb/types/__init__.py /usr/local/lib/python3.8/dist-packages/cocotb/types/logic_array.py /usr/local/lib/python3.8/dist-packages/cocotb/queue.py /usr/local/lib/python3.8/dist-packages/cocotb/result.py /usr/local/lib/python3.8/dist-packages/cocotb/_version.py /usr/local/lib/python3.8/dist-packages/cocotb/memdebug.py /usr/local/lib/python3.8/dist-packages/cocotb/libs/ /usr/local/lib/python3.8/dist-packages/cocotb/libs/libcocotbvpi_ghdl.so /usr/local/lib/python3.8/dist-packages/cocotb/libs/libcocotbvpi_vcs.so /usr/local/lib/python3.8/dist-packages/cocotb/libs/libcocotbvhpi_aldec.so /usr/local/lib/python3.8/dist-packages/cocotb/libs/libcocotbvpi_verilator.so /usr/local/lib/python3.8/dist-packages/cocotb/libs/libgpi.so /usr/local/lib/python3.8/dist-packages/cocotb/libs/libcocotbvpi_icarus.vpl /usr/local/lib/python3.8/dist-packages/cocotb/libs/libembed.so /usr/local/lib/python3.8/dist-packages/cocotb/libs/libgpilog.so /usr/local/lib/python3.8/dist-packages/cocotb/libs/libcocotb.so /usr/local/lib/python3.8/dist-packages/cocotb/libs/libcocotbvpi_modelsim.so /usr/local/lib/python3.8/dist-packages/cocotb/libs/libcocotbvhpi_ius.so /usr/local/lib/python3.8/dist-packages/cocotb/libs/libpygpilog.so /usr/local/lib/python3.8/dist-packages/cocotb/libs/libcocotbutils.so /usr/local/lib/python3.8/dist-packages/cocotb/libs/libcocotbvpi_aldec.so /usr/local/lib/python3.8/dist-packages/cocotb/libs/libcocotbvpi_ius.so /usr/local/lib/python3.8/dist-packages/cocotb/libs/libcocotbvhpi_modelsim.so
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+#  recipe to execute (from '/usr/local/lib/python3.8/dist-packages/cocotb/share/makefiles/simulators/Makefile.icarus', line 75):
+	-@rm -f $(COCOTB_RESULTS_FILE)
+	MODULE=$(MODULE) TESTCASE=$(TESTCASE) TOPLEVEL=$(TOPLEVEL) TOPLEVEL_LANG=$(TOPLEVEL_LANG) \
+        $(SIM_CMD_PREFIX) $(ICARUS_BIN_DIR)/vvp -M $(shell cocotb-config --lib-dir) -m $(shell cocotb-config --lib-name vpi icarus) $(SIM_ARGS) $(EXTRA_ARGS) $(SIM_BUILD)/sim.vvp $(PLUSARGS)
+	$(call check_for_results_file)
+
+# Not a target:
+/usr/local/lib/python3.8/dist-packages/cocotb/ipython_support.py:
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+
+# Not a target:
+/usr/local/lib/python3.8/dist-packages/cocotb/share/makefiles/Makefile.inc:
+#  Implicit rule search has been done.
+#  Last modified 2022-02-19 10:11:40.927384614
+#  File has been updated.
+#  Successfully updated.
+
+# Not a target:
+/usr/local/lib/python3.8/dist-packages/cocotb/share/makefiles/Makefile.sim:
+#  Implicit rule search has been done.
+#  Last modified 2022-02-19 10:11:40.931384563
+#  File has been updated.
+#  Successfully updated.
+
+# Not a target:
+/usr/local/lib/python3.8/dist-packages/cocotb/types/__init__.py:
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+
+# Not a target:
+/usr/local/lib/python3.8/dist-packages/cocotb/memdebug.py:
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+
+sim_build:
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+#  recipe to execute (from '/usr/local/lib/python3.8/dist-packages/cocotb/share/makefiles/Makefile.inc', line 104):
+	mkdir -p $@
+
+iverilog_dump.v:
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+#  recipe to execute (from 'Makefile', line 54):
+	echo 'module iverilog_dump();' > $@
+	echo 'initial begin' >> $@
+	echo '	$$dumpfile("$(TOPLEVEL).fst");' >> $@
+	echo '	$$dumpvars(0, $(TOPLEVEL));' >> $@
+	echo 'end' >> $@
+	echo 'endmodule' >> $@
+
+# Not a target:
+/usr/local/lib/python3.8/dist-packages/cocotb/types/logic.py:
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+
+# Not a target:
+.SUFFIXES:
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+
+# Not a target:
+/usr/local/lib/python3.8/dist-packages/cocotb/libs/libcocotbvpi_ghdl.so:
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+
+# Not a target:
+/usr/local/lib/python3.8/dist-packages/cocotb/config.py:
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+
+# Not a target:
+Makefile:
+#  Implicit rule search has been done.
+#  Last modified 2022-07-27 19:02:40.906279
+#  File has been updated.
+#  Successfully updated.
+
+# Not a target:
+/usr/local/lib/python3.8/dist-packages/cocotb/outcomes.py:
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+
+# Not a target:
+/usr/local/lib/python3.8/dist-packages/cocotb/xunit_reporter.py:
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+
+# Not a target:
+/usr/local/lib/python3.8/dist-packages/cocotb/_version.py:
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+
+# Not a target:
+/usr/local/lib/python3.8/dist-packages/cocotb/libs/libcocotbutils.so:
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+
+# Not a target:
+/usr/local/lib/python3.8/dist-packages/cocotb/libs/libcocotbvpi_aldec.so:
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+
+# Not a target:
+/usr/local/lib/python3.8/dist-packages/cocotb/_sim_versions.py:
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+
+# Not a target:
+/usr/local/lib/python3.8/dist-packages/cocotb/types/range.py:
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+
+# Not a target:
+/usr/local/lib/python3.8/dist-packages/cocotb/regression.py:
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+
+# Not a target:
+/usr/local/lib/python3.8/dist-packages/cocotb/_vendor/find_libpython/__main__.py:
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+
+regression: results.xml
+#  Phony target (prerequisite of .PHONY).
+#  Implicit rule search has not been done.
+#  File does not exist.
+#  File has not been updated.
+
+sim_build/sim.vvp: ../../rtl/fsm_hdlc.v | sim_build
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+#  recipe to execute (from '/usr/local/lib/python3.8/dist-packages/cocotb/share/makefiles/simulators/Makefile.icarus', line 69):
+	@echo "+timescale+$(COCOTB_HDL_TIMEUNIT)/$(COCOTB_HDL_TIMEPRECISION)" > $(SIM_BUILD)/cmds.f
+	$(CMD) -o $(SIM_BUILD)/sim.vvp -D COCOTB_SIM=1 $(TOPMODULE_ARG) $(COMPILE_ARGS) $(EXTRA_ARGS) $(VERILOG_SOURCES)
+
+# Not a target:
+/usr/local/lib/python3.8/dist-packages/cocotb/libs/libcocotbvpi_vcs.so:
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+ 
+#  File has not been updated.
+
+# Not a target:
+/usr/local/lib/python3.8/dist-packages/cocotb/__init__.py:
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+
+# Not a target:
+/usr/local/lib/python3.8/dist-packages/cocotb/share/makefiles/simulators/Makefile.icarus:
+#  Implicit rule search has been done.
+#  Last modified 2022-02-19 10:11:40.931384563
+#  File has been updated.
+#  Successfully updated.
+
+# Not a target:
+/usr/local/lib/python3.8/dist-packages/cocotb/libs/libcocotbvhpi_modelsim.so:
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+
+# Not a target:
+/usr/local/lib/python3.8/dist-packages/cocotb/libs/libcocotbvpi_ius.so:
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+
+# Not a target:
+/usr/local/lib/python3.8/dist-packages/cocotb/_py_compat.py:
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+
+# Not a target:
+/usr/local/lib/python3.8/dist-packages/cocotb/triggers.py:
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+
+# Not a target:
+.DEFAULT:
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+
+sim:
+#  Phony target (prerequisite of .PHONY).
+#  Implicit rule search has not been done.
+#  Implicit/static pattern stem: ''
+#  File does not exist.
+#  File has been updated.
+#  Needs to be updated (-q is set).
+# automatic
+# @ := sim
+# automatic
+# % := 
+# automatic
+# * := 
+# automatic
+# + := 
+# automatic
+# | := 
+# automatic
+# < := 
+# automatic
+# ^ := 
+# automatic
+# ? := 
+# variable set hash-table stats:
+# Load=8/32=25%, Rehash=0, Collisions=2/16=12%
+#  recipe to execute (from '/usr/local/lib/python3.8/dist-packages/cocotb/share/makefiles/Makefile.inc', line 39):
+	-@rm -f $(COCOTB_RESULTS_FILE)
+	$(MAKE) -f $(firstword $(MAKEFILE_LIST)) $(COCOTB_RESULTS_FILE)
+
+# Not a target:
+/usr/local/lib/python3.8/dist-packages/cocotb/libs/libcocotb.so:
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+
+debug: sim_build/sim.vvp /usr/local/lib/python3.8/dist-packages/cocotb/config.py /usr/local/lib/python3.8/dist-packages/cocotb/log.py /usr/local/lib/python3.8/dist-packages/cocotb/binary.py /usr/local/lib/python3.8/dist-packages/cocotb/clock.py /usr/local/lib/python3.8/dist-packages/cocotb/utils.py /usr/local/lib/python3.8/dist-packages/cocotb/handle.py /usr/local/lib/python3.8/dist-packages/cocotb/_py_compat.py /usr/local/lib/python3.8/dist-packages/cocotb/scheduler.py /usr/local/lib/python3.8/dist-packages/cocotb/triggers.py /usr/local/lib/python3.8/dist-packages/cocotb/regression.py /usr/local/lib/python3.8/dist-packages/cocotb/__init__.py /usr/local/lib/python3.8/dist-packages/cocotb/ipython_support.py /usr/local/lib/python3.8/dist-packages/cocotb/xunit_reporter.py /usr/local/lib/python3.8/dist-packages/cocotb/wavedrom.py /usr/local/lib/python3.8/dist-packages/cocotb/_vendor/find_libpython/__main__.py /usr/local/lib/python3.8/dist-packages/cocotb/_vendor/find_libpython/__init__.py /usr/local/lib/python3.8/dist-packages/cocotb/_vendor/find_libpython/_version.py /usr/local/lib/python3.8/dist-packages/cocotb/_vendor/__init__.py /usr/local/lib/python3.8/dist-packages/cocotb/_vendor/distutils_version.py /usr/local/lib/python3.8/dist-packages/cocotb/outcomes.py /usr/local/lib/python3.8/dist-packages/cocotb/decorators.py /usr/local/lib/python3.8/dist-packages/cocotb/ANSI.py /usr/local/lib/python3.8/dist-packages/cocotb/_sim_versions.py /usr/local/lib/python3.8/dist-packages/cocotb/types/range.py /usr/local/lib/python3.8/dist-packages/cocotb/types/logic.py /usr/local/lib/python3.8/dist-packages/cocotb/types/array.py /usr/local/lib/python3.8/dist-packages/cocotb/types/__init__.py /usr/local/lib/python3.8/dist-packages/cocotb/types/logic_array.py /usr/local/lib/python3.8/dist-packages/cocotb/queue.py /usr/local/lib/python3.8/dist-packages/cocotb/result.py /usr/local/lib/python3.8/dist-packages/cocotb/_version.py /usr/local/lib/python3.8/dist-packages/cocotb/memdebug.py /usr/local/lib/python3.8/dist-packages/cocotb/libs/ /usr/local/lib/python3.8/dist-packages/cocotb/libs/libcocotbvpi_ghdl.so /usr/local/lib/python3.8/dist-packages/cocotb/libs/libcocotbvpi_vcs.so /usr/local/lib/python3.8/dist-packages/cocotb/libs/libcocotbvhpi_aldec.so /usr/local/lib/python3.8/dist-packages/cocotb/libs/libcocotbvpi_verilator.so /usr/local/lib/python3.8/dist-packages/cocotb/libs/libgpi.so /usr/local/lib/python3.8/dist-packages/cocotb/libs/libcocotbvpi_icarus.vpl /usr/local/lib/python3.8/dist-packages/cocotb/libs/libembed.so /usr/local/lib/python3.8/dist-packages/cocotb/libs/libgpilog.so /usr/local/lib/python3.8/dist-packages/cocotb/libs/libcocotb.so /usr/local/lib/python3.8/dist-packages/cocotb/libs/libcocotbvpi_modelsim.so /usr/local/lib/python3.8/dist-packages/cocotb/libs/libcocotbvhpi_ius.so /usr/local/lib/python3.8/dist-packages/cocotb/libs/libpygpilog.so /usr/local/lib/python3.8/dist-packages/cocotb/libs/libcocotbutils.so /usr/local/lib/python3.8/dist-packages/cocotb/libs/libcocotbvpi_aldec.so /usr/local/lib/python3.8/dist-packages/cocotb/libs/libcocotbvpi_ius.so /usr/local/lib/python3.8/dist-packages/cocotb/libs/libcocotbvhpi_modelsim.so
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+#  recipe to execute (from '/usr/local/lib/python3.8/dist-packages/cocotb/share/makefiles/simulators/Makefile.icarus', line 83):
+	-@rm -f $(COCOTB_RESULTS_FILE)
+	MODULE=$(MODULE) TESTCASE=$(TESTCASE) TOPLEVEL=$(TOPLEVEL) TOPLEVEL_LANG=$(TOPLEVEL_LANG) \
+        $(SIM_CMD_PREFIX) gdb --args $(ICARUS_BIN_DIR)/vvp $(shell cocotb-config --lib-dir) -m $(shell cocotb-config --lib-name vpi icarus) $(SIM_BUILD)/sim.vvp $(SIM_ARGS) $(EXTRA_ARGS) $(PLUSARGS)
+	$(call check_for_results_file)
+
+# Not a target:
+/usr/local/lib/python3.8/dist-packages/cocotb/share/makefiles/Makefile.deprecations:
+#  Implicit rule search has been done.
+#  Last modified 2022-02-19 10:11:40.927384614
+#  File has been updated.
+#  Successfully updated.
+
+# Not a target:
+/usr/local/lib/python3.8/dist-packages/cocotb/scheduler.py:
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+
+# Not a target:
+/usr/local/lib/python3.8/dist-packages/cocotb/clock.py:
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+
+# Not a target:
+/usr/local/lib/python3.8/dist-packages/cocotb/binary.py:
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+
+# Not a target:
+/usr/local/lib/python3.8/dist-packages/cocotb/types/array.py:
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+
+clean::
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+#  recipe to execute (from '/usr/local/lib/python3.8/dist-packages/cocotb/share/makefiles/simulators/Makefile.icarus', line 91):
+	-@rm -rf $(SIM_BUILD)
+
+clean::
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+#  recipe to execute (from 'Makefile', line 62):
+	@rm -rf iverilog_dump.v
+	@rm -rf dump.fst $(TOPLEVEL).fst
+	@rm -rf *.xml .fuse*
+	@rm -rf __pycache__/
+
+# Not a target:
+/usr/local/lib/python3.8/dist-packages/cocotb/result.py:
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+
+# Not a target:
+/usr/local/lib/python3.8/dist-packages/cocotb/wavedrom.py:
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+
+# Not a target:
+/usr/local/lib/python3.8/dist-packages/cocotb/_vendor/distutils_version.py:
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+
+# Not a target:
+/usr/local/lib/python3.8/dist-packages/cocotb/log.py:
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+
+# Not a target:
+/usr/local/lib/python3.8/dist-packages/cocotb/_vendor/__init__.py:
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+
+# Not a target:
+/usr/local/lib/python3.8/dist-packages/cocotb/libs/libcocotbvpi_icarus.vpl:
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+
+# Not a target:
+/usr/local/lib/python3.8/dist-packages/cocotb/_vendor/find_libpython/__init__.py:
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+
+# Not a target:
+../../rtl/fsm_hdlc.v:
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+
+# Not a target:
+/usr/local/lib/python3.8/dist-packages/cocotb/libs/libembed.so:
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+
+# Not a target:
+/usr/local/lib/python3.8/dist-packages/cocotb/handle.py:
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+
+# Not a target:
+/usr/local/lib/python3.8/dist-packages/cocotb/libs/:
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+
+# Not a target:
+/usr/local/lib/python3.8/dist-packages/cocotb/types/logic_array.py:
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+
+# Not a target:
+/usr/local/lib/python3.8/dist-packages/cocotb/libs/libpygpilog.so:
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+
+# Not a target:
+/usr/local/lib/python3.8/dist-packages/cocotb/queue.py:
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+
+# files hash-table stats:
+# Load=67/1024=7%, Rehash=0, Collisions=13/199=7%
+# VPATH Search Paths
+
+# No 'vpath' search paths.
+
+# No general ('VPATH' variable) search path.
+
+# strcache buffers: 1 (0) / strings = 76 / storage = 3714 B / avg = 48 B
+# current buf: size = 8162 B / used = 3714 B / count = 76 / avg = 48 B
+
+# strcache performance: lookups = 164 / hit rate = 53%
+# hash-table stats:
+# Load=76/8192=1%, Rehash=0, Collisions=3/164=2%
+# Finished Make data base on Thu Sep  8 14:48:27 2022
+
+# make[2]: Leaving directory '/home/linjw16/E/Program_Files/prj/utilities/verilog/tb/fsm_hdlc'
+ 
+# GNU Make 4.2.1
+# Built for x86_64-pc-linux-gnu
+# Copyright (C) 1988-2016 Free Software Foundation, Inc.
+# License GPLv3+: GNU GPL version 3 or later <http://gnu.org/licenses/gpl.html>
+# This is free software: you are free to change and redistribute it.
+# There is NO WARRANTY, to the extent permitted by law.
+
+# Make data base, printed on Thu Sep  8 14:48:27 2022
+
+# Variables
+
+# automatic
+<D = $(patsubst %/,%,$(dir $<))
+# automatic
+?F = $(notdir $?)
+# environment
+DESKTOP_SESSION = ubuntu
+# default
+.SHELLFLAGS := -c
+# environment
+XDG_SESSION_CLASS = user
+# makefile (from 'Makefile', line 2)
+TOPTARGETS := all clean
+# environment
+XDG_SESSION_TYPE = x11
+# automatic
+?D = $(patsubst %/,%,$(dir $?))
+# automatic
+@D = $(patsubst %/,%,$(dir $@))
+# environment
+XAUTHORITY = /home/linjw16/.Xauthority
+# environment
+GDMSESSION = ubuntu
+# environment
+XMODIFIERS = @im=ibus
+# makefile
+CURDIR := /home/linjw16/E/Program_Files/prj/utilities/verilog/tb
+# makefile
+SHELL = /bin/sh
+# environment
+GDM_LANG = zh_CN
+# environment
+VSCODE_NLS_CONFIG = {"locale":"zh-cn","availableLanguages":{"*":"zh-cn"},"_languagePackId":"a1516064f4f46f2a618c351c3fa99660.zh-cn","_translationsConfigFile":"/home/linjw16/.config/Code/clp/a1516064f4f46f2a618c351c3fa99660.zh-cn/tcf.json","_cacheRoot":"/home/linjw16/.config/Code/clp/a1516064f4f46f2a618c351c3fa99660.zh-cn","_resolvedLanguagePackCoreLocation":"/home/linjw16/.config/Code/clp/a1516064f4f46f2a618c351c3fa99660.zh-cn/784b0177c56c607789f9638da7b6bf3230d47a8c","_corruptedFile":"/home/linjw16/.config/Code/clp/a1516064f4f46f2a618c351c3fa99660.zh-cn/corrupted.info","_languagePackSupport":true}
+# environment
+_ = /usr/share/code/code
+# environment
+JOURNAL_STREAM = 8:311015
+# environment
+XDG_CONFIG_DIRS = /etc/xdg/xdg-ubuntu:/etc/xdg
+# makefile (from 'Makefile', line 1)
+MAKEFILE_LIST :=  Makefile
+# automatic
+@F = $(notdir $@)
+# environment
+IM_CONFIG_PHASE = 1
+# 'override' directive
+GNUMAKEFLAGS := 
+# environment
+XDG_DATA_DIRS = /usr/share/ubuntu:/usr/local/share/:/usr/share/
+# environment
+DBUS_SESSION_BUS_ADDRESS = unix:path=/run/user/1000/bus
+# environment
+MANAGERPID = 1279
+# environment
+LESSOPEN = | /usr/bin/lesspipe %s
+# environment
+VSCODE_CWD = /home/linjw16
+# environment
+XDG_SESSION_PATH = /org/freedesktop/DisplayManager/Session1
+# default
+MAKE_HOST := x86_64-pc-linux-gnu
+# environment
+PATH = /home/linjw16/.local/bin:/home/linjw16/.local/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin:/home/linjw16/文档/OpenROAD/build/src/:/home/linjw16/文档/OpenROAD/build/src/
+# environment
+GPG_AGENT_INFO = /run/user/1000/gnupg/S.gpg-agent:0:1
+# environment
+SESSION_MANAGER = local/dell:@/tmp/.ICE-unix/17345,unix/dell:/tmp/.ICE-unix/17345
+# environment
+XDG_RUNTIME_DIR = /run/user/1000
+# environment
+XDG_MENU_PREFIX = gnome-
+# environment
+ELECTRON_RUN_AS_NODE = 1
+# environment
+INVOCATION_ID = b07d9ca5dc084c6caee54fc454b7277e
+# default
+.FEATURES := target-specific order-only second-expansion else-if shortest-stem undefine oneshell archives jobserver output-sync check-symlink load
+# environment
+XDG_GREETER_DATA_DIR = /var/lib/lightdm-data/linjw16
+# environment
+LS_COLORS = 
+# environment
+XDG_SESSION_DESKTOP = ubuntu
+# environment
+SSH_AUTH_SOCK = /run/user/1000/keyring/ssh
+# environment
+GIO_LAUNCHED_DESKTOP_FILE_PID = 37681
+# automatic
+%F = $(notdir $%)
+# environment
+DISPLAY = :0
+# environment
+PWD = /home/linjw16/E/Program_Files/prj/utilities/verilog
+# default
+.LOADED := 
+# environment
+SSH_AGENT_PID = 17282
+# environment
+ORIGINAL_XDG_CURRENT_DESKTOP = ubuntu:GNOME
+# environment
+GTK_MODULES = gail:atk-bridge
+# environment
+VSCODE_AMD_ENTRYPOINT = vs/workbench/api/node/extensionHostProcess
+# environment
+HOME = /home/linjw16
+# environment
+LESSCLOSE = /usr/bin/lesspipe %s %s
+# environment
+VSCODE_CODE_CACHE_PATH = /home/linjw16/.config/Code/CachedData/784b0177c56c607789f9638da7b6bf3230d47a8c
+# environment
+LOGNAME = linjw16
+# environment
+APPLICATION_INSIGHTS_NO_DIAGNOSTIC_CHANNEL = 1
+# environment
+VSCODE_HANDLES_UNCAUGHT_ERRORS = true
+# environment
+GNOME_DESKTOP_SESSION_ID = this-is-deprecated
+# automatic
+^D = $(patsubst %/,%,$(dir $^))
+# environment
+MAKELEVEL := 1
+# default
+ 
+MAKE = $(MAKE_COMMAND)
+# default
+MAKECMDGOALS := all
+# environment
+QT_IM_MODULE = ibus
+# environment
+SHLVL = 0
+# environment
+GNOME_SHELL_SESSION_MODE = ubuntu
+# default
+MAKE_VERSION := 4.2.1
+# environment
+USER = linjw16
+# makefile
+.DEFAULT_GOAL := all
+# environment
+XDG_CURRENT_DESKTOP = Unity
+# automatic
+%D = $(patsubst %/,%,$(dir $%))
+# default
+MAKE_COMMAND := make
+# default
+.VARIABLES := 
+# automatic
+*F = $(notdir $*)
+# environment
+LANGUAGE = zh_CN:zh
+# environment
+XDG_SEAT_PATH = /org/freedesktop/DisplayManager/Seat0
+# environment
+VSCODE_IPC_HOOK = /run/user/1000/vscode-b7ca5a55-1.71.0-main.sock
+# makefile
+MAKEFLAGS = pqrRw
+# environment
+MFLAGS = -pqrRw
+# automatic
+*D = $(patsubst %/,%,$(dir $*))
+# automatic
++D = $(patsubst %/,%,$(dir $+))
+# environment
+GDK_BACKEND = x11
+# automatic
++F = $(notdir $+)
+# environment
+QT_ACCESSIBILITY = 1
+# default
+MAKEFILES := 
+# automatic
+<F = $(notdir $<)
+# environment
+LC_ALL = C
+# environment
+GJS_DEBUG_TOPICS = JS ERROR;JS LOG
+# automatic
+^F = $(notdir $^)
+# default
+SUFFIXES := 
+# environment
+CHROME_DESKTOP = code-url-handler.desktop
+# default
+.INCLUDE_DIRS = /usr/include /usr/local/include /usr/include
+# environment
+GJS_DEBUG_OUTPUT = stderr
+# default
+.RECIPEPREFIX := 
+# makefile (from 'Makefile', line 4)
+SUBDIRS := fsm_hdlc/. conway_life/. example/. gshare.v/. serial_fsm/. p4_mux/. p4_demux/.
+# environment
+GIO_LAUNCHED_DESKTOP_FILE = /usr/share/applications/code.desktop
+# environment
+LANG = C
+# environment
+VSCODE_PID = 37681
+# variable set hash-table stats:
+# Load=97/1024=9%, Rehash=0, Collisions=8/136=6%
+
+# Pattern-specific Variable Values
+
+# No pattern-specific variable values.
+
+# Directories
+
+# . (device 2065, inode 41349): 10 files, no impossibilities.
+
+# 10 files, no impossibilities in 1 directories.
+
+# Implicit Rules
+
+# No implicit rules.
+
+# Files
+
+example/.:
+#  Phony target (prerequisite of .PHONY).
+#  Implicit rule search has not been done.
+#  File does not exist.
+#  File has not been updated.
+#  recipe to execute (from 'Makefile', line 10):
+	$(MAKE) -C $@ $(MAKECMDGOALS)
+
+fsm_hdlc/.:
+#  Phony target (prerequisite of .PHONY).
+#  Implicit rule search has not been done.
+#  Implicit/static pattern stem: ''
+#  File does not exist.
+#  File has been updated.
+#  Needs to be updated (-q is set).
+# automatic
+# @ := fsm_hdlc/.
+# automatic
+# % := 
+# automatic
+# * := 
+# automatic
+# + := 
+# automatic
+# | := 
+# automatic
+# < := 
+# automatic
+# ^ := 
+# automatic
+# ? := 
+# variable set hash-table stats:
+# Load=8/32=25%, Rehash=0, Collisions=2/15=13%
+#  recipe to execute (from 'Makefile', line 10):
+	$(MAKE) -C $@ $(MAKECMDGOALS)
+
+all: fsm_hdlc/. conway_life/. example/. gshare.v/. serial_fsm/. p4_mux/. p4_demux/.
+#  Phony target (prerequisite of .PHONY).
+#  Command line target.
+#  Implicit rule search has not been done.
+#  File does not exist.
+#  File has not been updated.
+# variable set hash-table stats:
+# Load=0/32=0%, Rehash=0, Collisions=0/6=0%
+
+.PHONY: all clean fsm_hdlc/. conway_life/. example/. gshare.v/. serial_fsm/. p4_mux/. p4_demux/.
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+
+# Not a target:
+.SUFFIXES:
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+
+conway_life/.:
+#  Phony target (prerequisite of .PHONY).
+#  Implicit rule search has not been done.
+#  File does not exist.
+#  File has not been updated.
+#  recipe to execute (from 'Makefile', line 10):
+	$(MAKE) -C $@ $(MAKECMDGOALS)
+
+# Not a target:
+Makefile:
+#  Implicit rule search has been done.
+#  Last modified 2022-08-11 16:57:30.8878182
+#  File has been updated.
+#  Successfully updated.
+
+p4_mux/.:
+#  Phony target (prerequisite of .PHONY).
+#  Implicit rule search has not been done.
+#  File does not exist.
+#  File has not been updated.
+#  recipe to execute (from 'Makefile', line 10):
+	$(MAKE) -C $@ $(MAKECMDGOALS)
+
+p4_demux/.:
+#  Phony target (prerequisite of .PHONY).
+#  Implicit rule search has not been done.
+#  File does not exist.
+#  File has not been updated.
+#  recipe to execute (from 'Makefile', line 10):
+	$(MAKE) -C $@ $(MAKECMDGOALS)
+
+# Not a target:
+.DEFAULT:
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+
+gshare.v/.:
+#  Phony target (prerequisite of .PHONY).
+#  Implicit rule search has not been done.
+#  File does not exist.
+#  File has not been updated.
+#  recipe to execute (from 'Makefile', line 10):
+	$(MAKE) -C $@ $(MAKECMDGOALS)
+
+clean: fsm_hdlc/. conway_life/. example/. gshare.v/. serial_fsm/. p4_mux/. p4_demux/.
+#  Phony target (prerequisite of .PHONY).
+#  Implicit rule search has not been done.
+#  File does not exist.
+#  File has not been updated.
+
+serial_fsm/.:
+#  Phony target (prerequisite of .PHONY).
+#  Implicit rule search has not been done.
+#  File does not exist.
+#  File has not been updated.
+#  recipe to execute (from 'Makefile', line 10):
+	$(MAKE) -C $@ $(MAKECMDGOALS)
+
+# files hash-table stats:
+ 
+# Load=13/1024=1%, Rehash=0, Collisions=4/50=8%
+# VPATH Search Paths
+
+# No 'vpath' search paths.
+
+# No general ('VPATH' variable) search path.
+
+# strcache buffers: 1 (0) / strings = 25 / storage = 231 B / avg = 9 B
+# current buf: size = 8162 B / used = 231 B / count = 25 / avg = 9 B
+
+# strcache performance: lookups = 57 / hit rate = 56%
+# hash-table stats:
+# Load=25/8192=0%, Rehash=0, Collisions=1/57=2%
+# Finished Make data base on Thu Sep  8 14:48:27 2022
+
+# make[1]: Leaving directory '/home/linjw16/E/Program_Files/prj/utilities/verilog/tb'
+# GNU Make 4.2.1
+# Built for x86_64-pc-linux-gnu
+# Copyright (C) 1988-2016 Free Software Foundation, Inc.
+# License GPLv3+: GNU GPL version 3 or later <http://gnu.org/licenses/gpl.html>
+# This is free software: you are free to change and redistribute it.
+# There is NO WARRANTY, to the extent permitted by law.
+
+# Make data base, printed on Thu Sep  8 14:48:27 2022
+
+# Variables
+
+# automatic
+<D = $(patsubst %/,%,$(dir $<))
+# automatic
+?F = $(notdir $?)
+# environment
+DESKTOP_SESSION = ubuntu
+# default
+.SHELLFLAGS := -c
+# environment
+XDG_SESSION_CLASS = user
+# makefile (from 'Makefile', line 2)
+TOPTARGETS := all clean
+# environment
+ 
+XDG_SESSION_TYPE = x11
+# automatic
+?D = $(patsubst %/,%,$(dir $?))
+# environment
+IM_CONFIG_PHASE = 1
+# automatic
+@D = $(patsubst %/,%,$(dir $@))
+# environment
+XAUTHORITY = /home/linjw16/.Xauthority
+# environment
+GDMSESSION = ubuntu
+# environment
+XMODIFIERS = @im=ibus
+# makefile
+CURDIR := /home/linjw16/E/Program_Files/prj/utilities/verilog
+# makefile
+SHELL = /bin/sh
+# environment
+GDM_LANG = zh_CN
+# environment
+VSCODE_NLS_CONFIG = {"locale":"zh-cn","availableLanguages":{"*":"zh-cn"},"_languagePackId":"a1516064f4f46f2a618c351c3fa99660.zh-cn","_translationsConfigFile":"/home/linjw16/.config/Code/clp/a1516064f4f46f2a618c351c3fa99660.zh-cn/tcf.json","_cacheRoot":"/home/linjw16/.config/Code/clp/a1516064f4f46f2a618c351c3fa99660.zh-cn","_resolvedLanguagePackCoreLocation":"/home/linjw16/.config/Code/clp/a1516064f4f46f2a618c351c3fa99660.zh-cn/784b0177c56c607789f9638da7b6bf3230d47a8c","_corruptedFile":"/home/linjw16/.config/Code/clp/a1516064f4f46f2a618c351c3fa99660.zh-cn/corrupted.info","_languagePackSupport":true}
+# environment
+_ = /usr/share/code/code
+# environment
+JOURNAL_STREAM = 8:311015
+# environment
+XDG_CONFIG_DIRS = /etc/xdg/xdg-ubuntu:/etc/xdg
+# makefile (from 'Makefile', line 1)
+MAKEFILE_LIST :=  Makefile
+# automatic
+@F = $(notdir $@)
+# environment
+GIO_LAUNCHED_DESKTOP_FILE = /usr/share/applications/code.desktop
+# 'override' directive
+GNUMAKEFLAGS := 
+# environment
+XDG_DATA_DIRS = /usr/share/ubuntu:/usr/local/share/:/usr/share/
+# environment
+DBUS_SESSION_BUS_ADDRESS = unix:path=/run/user/1000/bus
+# environment
+MANAGERPID = 1279
+# environment
+LESSOPEN = | /usr/bin/lesspipe %s
+# environment
+VSCODE_CWD = /home/linjw16
+# environment
+XDG_SESSION_PATH = /org/freedesktop/DisplayManager/Session1
+# default
+MAKE_HOST := x86_64-pc-linux-gnu
+# environment
+PATH = /home/linjw16/.local/bin:/home/linjw16/.local/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin:/home/linjw16/文档/OpenROAD/build/src/:/home/linjw16/文档/OpenROAD/build/src/
+# environment
+GPG_AGENT_INFO = /run/user/1000/gnupg/S.gpg-agent:0:1
+# environment
+SESSION_MANAGER = local/dell:@/tmp/.ICE-unix/17345,unix/dell:/tmp/.ICE-unix/17345
+# environment
+XDG_RUNTIME_DIR = /run/user/1000
+# environment
+XDG_MENU_PREFIX = gnome-
+# environment
+ELECTRON_RUN_AS_NODE = 1
+# environment
+INVOCATION_ID = b07d9ca5dc084c6caee54fc454b7277e
+# default
+.FEATURES := target-specific order-only second-expansion else-if shortest-stem undefine oneshell archives jobserver output-sync check-symlink load
+# environment
+XDG_GREETER_DATA_DIR = /var/lib/lightdm-data/linjw16
+# environment
+LS_COLORS = 
+# environment
+XDG_SESSION_DESKTOP = ubuntu
+# environment
+SSH_AUTH_SOCK = /run/user/1000/keyring/ssh
+# environment
+GIO_LAUNCHED_DESKTOP_FILE_PID = 37681
+# automatic
+%F = $(notdir $%)
+# environment
+DISPLAY = :0
+# environment
+PWD = /home/linjw16/E/Program_Files/prj/utilities/verilog
+# default
+.LOADED := 
+# environment
+SSH_AGENT_PID = 17282
+# environment
+ORIGINAL_XDG_CURRENT_DESKTOP = ubuntu:GNOME
+# environment
+GTK_MODULES = gail:atk-bridge
+# environment
+VSCODE_AMD_ENTRYPOINT = vs/workbench/api/node/extensionHostProcess
+# environment
+HOME = /home/linjw16
+# environment
+LESSCLOSE = /usr/bin/lesspipe %s %s
+# environment
+VSCODE_CODE_CACHE_PATH = /home/linjw16/.config/Code/CachedData/784b0177c56c607789f9638da7b6bf3230d47a8c
+# environment
+LOGNAME = linjw16
+# environment
+APPLICATION_INSIGHTS_NO_DIAGNOSTIC_CHANNEL = 1
+# environment
+VSCODE_HANDLES_UNCAUGHT_ERRORS = true
+# environment
+GNOME_DESKTOP_SESSION_ID = this-is-deprecated
+# automatic
+^D = $(patsubst %/,%,$(dir $^))
+# environment
+MAKELEVEL := 0
+# default
+MAKE = $(MAKE_COMMAND)
+# default
+MAKECMDGOALS := all
+# environment
+QT_IM_MODULE = ibus
+# environment
+SHLVL = 0
+# environment
+GNOME_SHELL_SESSION_MODE = ubuntu
+# default
+MAKE_VERSION := 4.2.1
+# environment
+USER = linjw16
+# makefile
+.DEFAULT_GOAL := all
+# environment
+XDG_CURRENT_DESKTOP = Unity
+# automatic
+%D = $(patsubst %/,%,$(dir $%))
+# default
+MAKE_COMMAND := make
+# default
+.VARIABLES := 
+# automatic
+*F = $(notdir $*)
+# environment
+LANGUAGE = zh_CN:zh
+# environment
+XDG_SEAT_PATH = /org/freedesktop/DisplayManager/Seat0
+# environment
+VSCODE_IPC_HOOK = /run/user/1000/vscode-b7ca5a55-1.71.0-main.sock
+# makefile
+MAKEFLAGS = pqrR
+# environment
+MFLAGS = -pqrR
+# automatic
+*D = $(patsubst %/,%,$(dir $*))
+# automatic
++D = $(patsubst %/,%,$(dir $+))
+# environment
+GDK_BACKEND = x11
+# automatic
++F = $(notdir $+)
+# environment
+QT_ACCESSIBILITY = 1
+# default
+MAKEFILES := 
+# automatic
+<F = $(notdir $<)
+# environment
+LC_ALL = C
+# environment
+GJS_DEBUG_TOPICS = JS ERROR;JS LOG
+# automatic
+^F = $(notdir $^)
+# default
+SUFFIXES := 
+# environment
+CHROME_DESKTOP = code-url-handler.desktop
+# default
+.INCLUDE_DIRS = /usr/include /usr/local/include /usr/include
+# environment
+GJS_DEBUG_OUTPUT = stderr
+# default
+.RECIPEPREFIX := 
+# makefile (from 'Makefile', line 4)
+SUBDIRS := tb/. rtl/. lib/.
+# environment
+LANG = C
+# environment
+VSCODE_PID = 37681
+# variable set hash-table stats:
+# Load=97/1024=9%, Rehash=0, Collisions=8/133=6%
+
+# Pattern-specific Variable Values
+
+# No pattern-specific variable values.
+
+# Directories
+
+# . (device 2065, inode 632319): 9 files, no impossibilities.
+
+# 9 files, no impossibilities in 1 directories.
+
+# Implicit Rules
+
+# No implicit rules.
+ 
+
+# Files
+
+all: tb/. rtl/. lib/.
+#  Phony target (prerequisite of .PHONY).
+#  Command line target.
+#  Implicit rule search has not been done.
+#  File does not exist.
+#  File has not been updated.
+# variable set hash-table stats:
+# Load=0/32=0%, Rehash=0, Collisions=0/6=0%
+
+.PHONY: all clean tb/. rtl/. lib/.
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+
+# Not a target:
+.SUFFIXES:
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+
+# Not a target:
+Makefile:
+#  Implicit rule search has been done.
+#  Last modified 2022-07-24 17:18:43.7835653
+#  File has been updated.
+#  Successfully updated.
+
+lib/.:
+#  Phony target (prerequisite of .PHONY).
+#  Implicit rule search has not been done.
+#  File does not exist.
+#  File has not been updated.
+#  recipe to execute (from 'Makefile', line 10):
+	$(MAKE) -C $@ $(MAKECMDGOALS)
+
+tb/.:
+#  Phony target (prerequisite of .PHONY).
+#  Implicit rule search has not been done.
+#  Implicit/static pattern stem: ''
+#  File does not exist.
+#  File has been updated.
+#  Needs to be updated (-q is set).
+# automatic
+# @ := tb/.
+# automatic
+# % := 
+# automatic
+# * := 
+# automatic
+# + := 
+# automatic
+# | := 
+# automatic
+# < := 
+# automatic
+# ^ := 
+# automatic
+# ? := 
+# variable set hash-table stats:
+# Load=8/32=25%, Rehash=0, Collisions=2/15=13%
+#  recipe to execute (from 'Makefile', line 10):
+	$(MAKE) -C $@ $(MAKECMDGOALS)
+
+# Not a target:
+.DEFAULT:
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+
+clean: tb/. rtl/. lib/.
+#  Phony target (prerequisite of .PHONY).
+#  Implicit rule search has not been done.
+#  File does not exist.
+#  File has not been updated.
+
+rtl/.:
+#  Phony target (prerequisite of .PHONY).
+#  Implicit rule search has not been done.
+#  File does not exist.
+#  File has not been updated.
+#  recipe to execute (from 'Makefile', line 10):
+	$(MAKE) -C $@ $(MAKECMDGOALS)
+
+# files hash-table stats:
+# Load=9/1024=1%, Rehash=0, Collisions=0/34=0%
+# VPATH Search Paths
+
+# No 'vpath' search paths.
+
+# No general ('VPATH' variable) search path.
+
+# strcache buffers: 1 (0) / strings = 19 / storage = 139 B / avg = 7 B
+# current buf: size = 8162 B / used = 139 B / count = 19 / avg = 7 B
+
+# strcache performance: lookups = 39 / hit rate = 51%
+# hash-table stats:
+# Load=19/8192=0%, Rehash=0, Collisions=1/39=3%
+# Finished Make data base on Thu Sep  8 14:48:27 2022
+
+ 

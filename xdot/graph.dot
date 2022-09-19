@@ -1,0 +1,21 @@
+
+
+// （简单）无向图.dot
+strict graph g {
+    g--subgraph id_2{
+        rank = same; 
+        a--b[color=blue];
+        c;
+    }
+    /*
+     * compass_pt: (n|ne|e|se|s|sw|w|nw|c|_)
+     */
+        c--d:ne;
+        e--f;
+    /*
+     * attr_stmt: (graph|node|edge)attr_list
+     */
+    graph [label = "label_1"][color="red"];
+    node [label = "label_2"];
+    edge [label = "label_3"];
+}

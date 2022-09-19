@@ -1,0 +1,76 @@
+[*]
+[*] GTKWave Analyzer v3.3.103 (w)1999-2019 BSI
+[*] Thu Aug 11 08:52:15 2022
+[*]
+[dumpfile] "/home/linjw16/E/Program_Files/prj/mux_demux/tb/p4_mux/p4_mux_wrap_4.fst"
+[dumpfile_mtime] "Thu Aug 11 08:32:17 2022"
+[dumpfile_size] 24740
+[savefile] "/home/linjw16/E/Program_Files/prj/mux_demux/tb/p4_mux/temp.gtkw"
+[timestart] 8003200
+[size] 3664 2018
+[pos] -1 -1
+*-14.000000 8102970 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1
+[treeopen] p4_mux_wrap_4.
+[treeopen] p4_mux_wrap_4.p4_mux_inst.
+[sst_width] 552
+[signals_width] 656
+[sst_expanded] 1
+[sst_vpaned_height] 599
+@28
+p4_mux_wrap_4.p4_mux_inst.rst
+p4_mux_wrap_4.clk
+p4_mux_wrap_4.clk
+@22
+p4_mux_wrap_4.m_axis_hdr_tdata[7:0]
+@28
+p4_mux_wrap_4.m_axis_hdr_tkeep
+p4_mux_wrap_4.m_axis_hdr_tvalid
+p4_mux_wrap_4.m_axis_hdr_tready
+p4_mux_wrap_4.m_axis_hdr_tlast
+@22
+p4_mux_wrap_4.m_axis_hdr_tid[9:0]
+@28
+p4_mux_wrap_4.clk
+p4_mux_wrap_4.clk
+@22
+p4_mux_wrap_4.m_axis_tdata[7:0]
+@28
+p4_mux_wrap_4.m_axis_tkeep
+p4_mux_wrap_4.m_axis_tvalid
+p4_mux_wrap_4.m_axis_tready
+p4_mux_wrap_4.m_axis_tlast
+@22
+p4_mux_wrap_4.m_axis_tid[9:0]
+@28
+p4_mux_wrap_4.clk
+p4_mux_wrap_4.clk
+p4_mux_wrap_4.p4_mux_inst.en_hdr_reg[3:0]
+p4_mux_wrap_4.p4_mux_inst.s_axis_hdr_tvalid_int[3:0]
+p4_mux_wrap_4.p4_mux_inst.s_axis_hdr_tready_int[3:0]
+p4_mux_wrap_4.p4_mux_inst.s_axis_hdr_tvalid[3:0]
+p4_mux_wrap_4.p4_mux_inst.s_axis_hdr_tready[3:0]
+@c00029
+p4_mux_wrap_4.p4_mux_inst.s_axis_hdr_tlast[3:0]
+@28
+(0)p4_mux_wrap_4.p4_mux_inst.s_axis_hdr_tlast[3:0]
+(1)p4_mux_wrap_4.p4_mux_inst.s_axis_hdr_tlast[3:0]
+(2)p4_mux_wrap_4.p4_mux_inst.s_axis_hdr_tlast[3:0]
+(3)p4_mux_wrap_4.p4_mux_inst.s_axis_hdr_tlast[3:0]
+@1401201
+-group_end
+@28
+p4_mux_wrap_4.clk
+p4_mux_wrap_4.p4_mux_inst.en_pld_reg[3:0]
+p4_mux_wrap_4.p4_mux_inst.s_axis_tvalid_int[3:0]
+p4_mux_wrap_4.p4_mux_inst.s_axis_tready_int[3:0]
+p4_mux_wrap_4.p4_mux_inst.s_axis_tvalid[3:0]
+p4_mux_wrap_4.p4_mux_inst.s_axis_tready[3:0]
+p4_mux_wrap_4.p4_mux_inst.s_axis_tlast[3:0]
+p4_mux_wrap_4.clk
+p4_mux_wrap_4.p4_mux_inst.grant[3:0]
+p4_mux_wrap_4.p4_mux_inst.grant_encoded[1:0]
+p4_mux_wrap_4.clk
+p4_mux_wrap_4.clk
+p4_mux_wrap_4.p4_mux_inst.grant_valid
+[pattern_trace] 1
+[pattern_trace] 0

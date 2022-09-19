@@ -1,0 +1,1 @@
+{"buildTargets":["all","clean","conway_life/.","debug","example/.","fsm_hdlc/.","gshare.v/.","iverilog_dump.v","lib/.","p4_demux/.","p4_mux/.","regression","results.xml","rtl/.","serial_fsm/.","sim","sim_build","sim_build/sim.vvp","tb/."],"launchTargets":[],"customConfigurationProvider":{"workspaceBrowse":{"browsePath":[],"compilerArgs":[]},"fileIndex":[]}}

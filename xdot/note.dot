@@ -1,0 +1,86 @@
+/* 
+ * filename: note.dot
+ * https://graphviz.org/doc/info/lang.html
+ */
+
+/*
+ * graph 	: [strict](graph|digraph)[ID]'{'stmt_list'}'
+ * 
+
+    #图的属性
+    1. 默认选项
+        1.1 节点: node [shape=box]
+        1.2 排布: rankdir=TB;compound=true;
+    #节点框的属性
+    1. 形状shape：box polygon circle triangle
+        1.1 多边形：    shape=polygon, sides=5, 
+        1.2 梯形：      shape=polygon, distortion=0.5
+        1.3 平行四边形：  shape=polygon, skew=0.5
+    2. 颜色
+        2.1 边框颜色color:    pink
+        2.2 fillcolor:      red "#ABACBA"
+    3. 标签label：  "bb"
+    4. 风格style：  filled
+
+    #边线的属性
+    1. 标签label：  [label = "label"]
+        1.1 头标签headlabel：   "head"
+        2.2 尾标签taillabel：   "tail"
+
+    2. 箭头类型arrowhead：  none diamond vee
+
+
+ */
+digraph id_1 {
+    rankdir=TB;
+    compound=true;
+    node [shape=box]
+    subgraph clst_1{
+        color=white;
+        {rank=same; }
+        subgraph cluster_1 {
+            {rank=same; s1b0; s1b1; s1b2}
+            s1b0 -> s1b1 -> s1b2 [color=black arrowhead=none maxlen=0.1];
+            b -> a;
+            label = "subgraph 1";
+            color=green;            /* 边框颜色 */
+        }
+    }
+
+    /*
+     * 有向边
+     */
+    a -> b [label = "label"]; 
+    b -> c [taillabel = "tail"];
+    c -> a [headlabel = "head"];
+    c -> d->e->f ;
+    d -> g [arrowhead = diamond];
+    e -> h;
+    h -> s1b1 [lhead=cluster_1, minlen=2];
+    h -> s1b0;
+
+    a [
+        shape=box,
+        label="Hello world",
+        style=filled,
+        fillcolor="#ABACBA"
+    ];
+
+    b [
+        shape=polygon,
+        sides=5,
+        label="bb",
+        style=filled,
+        fillcolor=red
+    ];
+
+    //c, 默认为椭圆
+    d [shape=circle]; //园
+    e[shape=triangle]; //三角形
+    // 多边形指定边数。
+    f[shape=polygon, sides=4, skew=0.5];
+    g[shape=polygon, distortion=0.5]; //梯形, 上边长
+    h[shape=polygon, distortion=-.5]; //梯形, 下边长
+
+}
+

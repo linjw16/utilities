@@ -1,0 +1,70 @@
+[*]
+[*] GTKWave Analyzer v3.3.103 (w)1999-2019 BSI
+[*] Thu Jul 28 15:09:57 2022
+[*]
+[dumpfile] "/home/linjw16/E/Program_Files/prj/utilities/verilog/tb/gshare.v/top_module.fst"
+[dumpfile_mtime] "Thu Jul 28 15:02:46 2022"
+[dumpfile_size] 1018
+[savefile] "/home/linjw16/E/Program_Files/prj/utilities/verilog/tb/gshare.v/temp.gtkw"
+[timestart] 0
+[size] 2211 2018
+[pos] 1629 0
+*-14.000000 42270 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1
+[sst_width] 466
+[signals_width] 430
+[sst_expanded] 1
+[sst_vpaned_height] 599
+@28
+top_module.clk
+top_module.areset
+top_module.predict_valid
+@22
+top_module.predict_pc[6:0]
+@28
+top_module.train_valid
+top_module.train_taken
+top_module.train_mispredicted
+@22
+top_module.train_history[6:0]
+@c00022
+top_module.train_pc[6:0]
+@28
+(0)top_module.train_pc[6:0]
+(1)top_module.train_pc[6:0]
+(2)top_module.train_pc[6:0]
+(3)top_module.train_pc[6:0]
+(4)top_module.train_pc[6:0]
+(5)top_module.train_pc[6:0]
+(6)top_module.train_pc[6:0]
+@1401200
+-group_end
+@28
+top_module.clk
+top_module.clk
+top_module.predict_taken
+@c00022
+top_module.predict_history[6:0]
+@28
+(0)top_module.predict_history[6:0]
+(1)top_module.predict_history[6:0]
+(2)top_module.predict_history[6:0]
+(3)top_module.predict_history[6:0]
+(4)top_module.predict_history[6:0]
+(5)top_module.predict_history[6:0]
+(6)top_module.predict_history[6:0]
+@1401200
+-group_end
+@28
+top_module.clk
+@29
+top_module.clk
+@22
+top_module.history_reg[6:0]
+top_module.idx_predict[7:0]
+top_module.idx_train[7:0]
+@28
+top_module.pht_idx[1:0]
+@22
+top_module.pht_reg[255:0]
+[pattern_trace] 1
+[pattern_trace] 0

@@ -1,0 +1,38 @@
+// filename: hash.dot
+digraph g {
+    nodesep = .5;
+    rankdir = LR;    //指定绘图的方向 (LR从左到右绘制)
+
+    // 定义竖直节点
+    node[
+        shape=record,
+        width=.1, 
+        height=.1
+    ];
+    // 标签域：通过竖划线分隔形状，用尖括号标识子框名。
+    node0[
+        label="<f0> |<f1> |<f2> |<f3> |<f4> |<f5> |<f6> ", 
+        height=2.5
+    ];
+
+    // 定义横向节点
+    node[
+        width=1.5
+    ];
+    node1[label="{<n> hello | 123 | <p>}"];
+    node2[label="{<n> world | 123 | <p>}"];
+    node3[label="{<n> my    | 123 | <p>}"];
+    node4[label="{<n> name  | 123 | <p>}"];
+    node5[label="{<n> is    | 123 | <p>}"];
+    node6[label="{<n> God   | 123 | <p>}"];
+    node7[label="{<n> Dame  | 123 | <p>}"];
+
+    // 建立节点之间的有向边
+    node0:f0 -> node1:n;
+    node0:f1 -> node2:n;
+    node0:f2 -> node3:n;
+    node0:f5 -> node4:n;
+    node0:f6 -> node5:n;
+    node2:p -> node6:n;
+    node4:p -> node7:n;
+}

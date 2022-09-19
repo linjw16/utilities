@@ -4,17 +4,24 @@ ifeq ($(ARGIN), 1)
 	# @echo "I am super!"
 endif
 
+include header.mk
+
+.PHONY: clean
+clean: 
+	@echo "Cleaning..."
+
+
+.PHONY: test
+test:
+	@echo "testing..."
+# ifeq不能缩进
+ifeq ($(ARGIN), 1)
+	@echo "ifeq($$(ARGIN), 1)"
+endif
+
 
 python, py:
 	python test.py
-
-test:
-	@echo "I am super!"
-
-# ifeq不能缩进
-ifeq ($(ARGIN), 1)
-	@echo "I am super!"
-endif
 
 
 # 在子目录执行 TOPTARGETS 命令

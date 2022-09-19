@@ -1,0 +1,91 @@
+digraph tx {
+    node [shape=box]
+    edge [color="red"]
+    /*
+     * 1. Belong relations. 
+     */
+    subgraph cluster_if_1{
+        label="mqnic_interface";
+        {txqm, tx_schd, desc, tx_fifo}
+        subgraph cluster_iftx {
+            label="mqnic_interface_tx"
+            {tx_engn, egr, dma_iftx}
+        }
+        subgraph cluster_pt_1 {
+            label="mqnic_port"
+            subgraph cluster_pttx {
+                label="mqnic_port_tx"
+                {tx_csum, fifo_p, fifo_a, egr_l2}
+            }
+        }
+    }
+    /*
+     * 2. Edges argumentation.
+     */
+    host -> txqm [label="1. MMIO hdr ptr", color="blue"]
+    txqm -> tx_schd [label="2. doorbell_*"]
+    tx_schd -> tx_engn [label="3. tx_req_*"]
+    tx_engn -> desc [label="4. desc_req_*"]
+    desc -> txqm [label="5. desc_dequeue_req_*"]
+    txqm -> desc [label="6. dequeue_resp_*"]
+    desc -> tx_engn [label="7. req_status_*"]
+    desc -> dma_mux_ctrl [label="8. ctrl_dma_read_desc_*", color="black"]
+    dma_mux_ctrl -> desc [label="9. ctrl_dma_read_desc_status_*", color="black"]
+    desc -> txqm [label="10. desc_dequeue_commit_*"]
+    desc -> tx_engn [label="11. m_axis_desc_*"]
+    tx_engn -> dma_mux_data [label="12. data_dma_read_desc_*", color="black"]
+    dma_mux_data -> tx_engn [label="13. data_read_desc_status_*", color="black"]
+    tx_engn -> dma_iftx [label="14. tx_desc_*"]
+    dma_iftx -> egr [label="16. tx_axis_t*"]
+    tx_engn -> tx_csum [label="15. tx_csum_cmd_*"]
+    /* APP_ENABLE=1 */
+    // egr -> app [label="19. app_if_tx_t*"]
+    // app -> tx_fifo [label="19. if_tx_t"]
+    // tx_fifo -> app [label="20. app_sync_tx_t*"]
+    // app -> fifo_p [label="20. tx_pipe_t*"]
+    // fifo_p -> fifo_a [label="21. tx_async_fifo_t*"]
+    // fifo_a -> app [label="22. app_direct_tx_t*"]
+    // app -> egr_l2 [label="23. tx_l2_t*"]
+    /* APP_ENABLE=0 */
+    egr -> tx_fifo [label="19. if_tx_t"]
+    tx_fifo -> fifo_p [label="20. tx_pipe_t*"]
+    fifo_p -> fifo_a [label="21. tx_async_fifo_t*"]
+    fifo_a -> egr_l2 [label="23. tx_l2_t*"]
+    
+    egr_l2 -> mac [label="eth_tx_t*"]
+    mac -> phy [label="port_xgmii_*"]
+
+    dma_mux_data -> dma_mux
+    dma_mux_ctrl -> dma_mux
+    dma_mux -> dma_if_pcie [label="dma_read_desc_*"]
+    dma_if_pcie -> pcie_us_if [label="tx_rd_req_tlp_*\ntx_wr_req_tlp_*\ntx_cpl_tlp_*"]
+    pcie_us_if -> dma_if_pcie [label="rx_cpl_tlp_*\nrx_req_tlp_*"]
+    pcie_us_if -> pcie_ip_core [label="rq_*\ncc_*"]
+    pcie_ip_core -> pcie_us_if [label="rc_*\ncq_*"]
+    /*
+     * 3. Nodes argumentation.
+     */
+    host [label="mqnic_start_xmit()",style=filled,fillcolor="#ABACBA"];
+    txqm [label="tx_queue_manager_inst"]
+    tx_schd [label="tx_scheduler_rr"]
+    tx_engn [label="tx_engine"]
+    desc [label="desc_fetch"]
+    tx_fifo [label="tx_fifo"]
+    dma_iftx [label="dma_client_axis_source"]
+    dma_rd [label="dma_if_pcie_rd"]
+    dma_mux_ctrl [label="dma_if_mux_ctrl"]
+    dma_mux_data [label="dma_if_mux_data"]
+    dma_mux [label="dma_if_mux"]
+    dma_if_pcie [label="dma_if_pcie"]
+    pcie_us_if [label="pcie_if"]
+    pcie_ip_core [label="pcie_ip_core"]
+    
+    tx_csum [label="tx_checksum"]
+    egr [label="mqnic_egress"]
+    egr_l2 [label="mqnic_l2_egress"]
+    app [label="mqnic_app_block"]
+    fifo_p [label="axis_pipeline_fifo"]
+    fifo_a [label="axis_async_fifo_adapter"]
+    mac [label="eth_mac_10g"]
+    phy [label="gty_tranceiver"]
+}

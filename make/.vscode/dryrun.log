@@ -1,0 +1,36 @@
+make --dry-run --always-make --keep-going --print-directory
+make: Entering directory '/home/linjw16/E/Program_Files/prj/utilities/make'
+echo "Cleaning..."
+echo "%.t"
+echo $\*		 = print 
+ 
+echo $\@		 = print 
+echo $\*		 =  
+echo $^		 = clean print.t 
+echo $+		 = clean print.t 
+echo $\?		 = clean print.t 
+echo $\<		 = clean 
+echo $%		 =  
+echo $\x		 =  
+echo \$$\?	 = $? 
+echo \*		 = *
+echo \$$\$$ = $$
+echo KERNELRELEASE		 = 
+echo TOPTARGETS		 = all clean 
+echo SUBDIRS			 = 
+echo MAKE				 = make
+ 
+MAKE = make
+ 
+echo MAKECMDGOALS		 = 
+echo KERNEL_SRC		 = 
+echo DESTDIR			 = 
+echo PREFIX			 = 
+echo CC				 = cc
+echo @F				 = print
+echo LDFLAGS			 = 
+echo wildcard \*\.mk	 = note.mk header.mk
+echo shell pwd			 = /home/linjw16/E/Program_Files/prj/utilities/make
+echo PATH = $PATH
+make: Leaving directory '/home/linjw16/E/Program_Files/prj/utilities/make'
+ 

@@ -1,0 +1,36 @@
+[*]
+[*] GTKWave Analyzer v3.3.103 (w)1999-2019 BSI
+[*] Sun Jul 24 09:40:05 2022
+[*]
+[dumpfile] "/home/linjw16/E/Program_Files/prj/utilities/verilog/tb/conway_life/dut.fst"
+[dumpfile_mtime] "Sun Jul 24 09:34:56 2022"
+[dumpfile_size] 1363
+[savefile] "/home/linjw16/E/Program_Files/prj/utilities/verilog/tb/conway_life/temp.gtkw"
+[timestart] 0
+[size] 3664 2018
+[pos] -77 -77
+*-13.000000 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1
+[treeopen] dut.
+[treeopen] dut.gen_row[0].
+[sst_width] 466
+[signals_width] 290
+[sst_expanded] 1
+[sst_vpaned_height] 599
+@28
+dut.clk
+@22
+dut.data[255:0]
+@28
+dut.load
+@22
+dut.q[255:0]
+dut.q_next[255:0]
+dut.q_reg[255:0]
+@28
+dut.rst
+@22
+dut.gen_row[0].gen_clm[0].count[3:0]
+dut.gen_row[0].gen_clm[1].count[3:0]
+dut.gen_row[0].gen_clm[2].count[3:0]
+[pattern_trace] 1
+[pattern_trace] 0

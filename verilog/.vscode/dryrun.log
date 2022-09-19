@@ -1,0 +1,179 @@
+make --dry-run --always-make --keep-going --print-directory
+make: Entering directory '/home/linjw16/E/Program_Files/prj/utilities/verilog'
+make -C tb/. 
+make[1]: Entering directory '/home/linjw16/E/Program_Files/prj/utilities/verilog/tb'
+make -C fsm_hdlc/. 
+make[2]: Entering directory '/home/linjw16/E/Program_Files/prj/utilities/verilog/tb/fsm_hdlc'
+ 
+rm -f results.xml
+make -f Makefile results.xml
+ 
+make[3]: Entering directory '/home/linjw16/E/Program_Files/prj/utilities/verilog/tb/fsm_hdlc'
+ 
+make[3]: *** No rule to make target '../../rtl/fsm_hdlc.v', needed by 'sim_build/sim.vvp'.
+
+mkdir -p sim_build
+ 
+make[3]: Leaving directory '/home/linjw16/E/Program_Files/prj/utilities/verilog/tb/fsm_hdlc'
+ 
+make[2]: Leaving directory '/home/linjw16/E/Program_Files/prj/utilities/verilog/tb/fsm_hdlc'
+ 
+make[2]: *** [/usr/local/lib/python3.8/dist-packages/cocotb/share/makefiles/Makefile.inc:40: sim] Error 2
+make[1]: *** [Makefile:10: fsm_hdlc/.] Error 2
+
+make -C conway_life/. 
+ 
+make[2]: Entering directory '/home/linjw16/E/Program_Files/prj/utilities/verilog/tb/conway_life'
+ 
+rm -f results.xml
+make -f Makefile results.xml
+ 
+make[3]: Entering directory '/home/linjw16/E/Program_Files/prj/utilities/verilog/tb/conway_life'
+ 
+make[3]: *** No rule to make target '../../rtl/conway_life.v', needed by 'sim_build/sim.vvp'.
+
+mkdir -p sim_build
+ 
+make[3]: Leaving directory '/home/linjw16/E/Program_Files/prj/utilities/verilog/tb/conway_life'
+ 
+make[2]: Leaving directory '/home/linjw16/E/Program_Files/prj/utilities/verilog/tb/conway_life'
+make -C example/. 
+ 
+make[2]: *** [/usr/local/lib/python3.8/dist-packages/cocotb/share/makefiles/Makefile.inc:40: sim] Error 2
+make[1]: *** [Makefile:10: conway_life/.] Error 2
+
+make[2]: Entering directory '/home/linjw16/E/Program_Files/prj/utilities/verilog/tb/example'
+ 
+rm -f results.xml
+make -f Makefile results.xml
+ 
+make[3]: Entering directory '/home/linjw16/E/Program_Files/prj/utilities/verilog/tb/example'
+ 
+echo 'module iverilog_dump();' > iverilog_dump.v
+echo 'initial begin' >> iverilog_dump.v
+echo '	$dumpfile("dut.fst");' >> iverilog_dump.v
+echo '	$dumpvars(0, dut);' >> iverilog_dump.v
+echo 'end' >> iverilog_dump.v
+echo 'endmodule' >> iverilog_dump.v
+ 
+mkdir -p sim_build
+echo "+timescale+1ns/1ps" > sim_build/cmds.f
+/usr/bin/iverilog -o sim_build/sim.vvp -D COCOTB_SIM=1 -s dut -P dut.DEPTH=1 -P dut.DATA_WIDTH=8 -P dut.WIDTH=64 -s iverilog_dump -f sim_build/cmds.f -g2012   dut.v ../../rtl/example/test.v iverilog_dump.v
+ 
+rm -f results.xml
+MODULE=testbench TESTCASE= TOPLEVEL=dut TOPLEVEL_LANG=verilog \
+         /usr/bin/vvp -M /usr/local/lib/python3.8/dist-packages/cocotb/libs -m libcocotbvpi_icarus   sim_build/sim.vvp -fst
+test -f results.xml || (echo "ERROR: results.xml was not written by the simulation!" >&2 && exit 1)
+make[3]: Leaving directory '/home/linjw16/E/Program_Files/prj/utilities/verilog/tb/example'
+ 
+make[2]: Leaving directory '/home/linjw16/E/Program_Files/prj/utilities/verilog/tb/example'
+make -C gshare.v/. 
+ 
+make[2]: Entering directory '/home/linjw16/E/Program_Files/prj/utilities/verilog/tb/gshare.v'
+ 
+rm -f results.xml
+make -f Makefile results.xml
+ 
+make[3]: Entering directory '/home/linjw16/E/Program_Files/prj/utilities/verilog/tb/gshare.v'
+ 
+make[3]: *** No rule to make target '../../rtl/gshare.v', needed by 'sim_build/sim.vvp'.
+
+mkdir -p sim_build
+ 
+make[3]: Leaving directory '/home/linjw16/E/Program_Files/prj/utilities/verilog/tb/gshare.v'
+ 
+make[2]: *** [/usr/local/lib/python3.8/dist-packages/cocotb/share/makefiles/Makefile.inc:40: sim] Error 2
+
+make[1]: *** [Makefile:10: gshare.v/.] Error 2
+
+make[2]: Leaving directory '/home/linjw16/E/Program_Files/prj/utilities/verilog/tb/gshare.v'
+make -C serial_fsm/. 
+ 
+make[2]: Entering directory '/home/linjw16/E/Program_Files/prj/utilities/verilog/tb/serial_fsm'
+ 
+rm -f results.xml
+make -f Makefile results.xml
+ 
+make[3]: Entering directory '/home/linjw16/E/Program_Files/prj/utilities/verilog/tb/serial_fsm'
+ 
+make[3]: *** No rule to make target '../../rtl/serial_fsm.v', needed by 'sim_build/sim.vvp'.
+
+mkdir -p sim_build
+ 
+make[3]: Leaving directory '/home/linjw16/E/Program_Files/prj/utilities/verilog/tb/serial_fsm'
+ 
+make[2]: Leaving directory '/home/linjw16/E/Program_Files/prj/utilities/verilog/tb/serial_fsm'
+ 
+make[2]: *** [/usr/local/lib/python3.8/dist-packages/cocotb/share/makefiles/Makefile.inc:40: sim] Error 2
+make[1]: *** [Makefile:10: serial_fsm/.] Error 2
+
+make -C p4_mux/. 
+ 
+make[2]: Entering directory '/home/linjw16/E/Program_Files/prj/utilities/verilog/tb/p4_mux'
+ 
+rm -f results.xml
+make -f Makefile results.xml
+ 
+make[3]: Entering directory '/home/linjw16/E/Program_Files/prj/utilities/verilog/tb/p4_mux'
+ 
+./p4_mux_wrap.py -p 4
+ 
+mkdir -p sim_build
+ 
+echo "+timescale+1ns/1ps" > sim_build/cmds.f
+/usr/bin/iverilog -o sim_build/sim.vvp -D COCOTB_SIM=1 -s p4_mux_wrap_4 -P p4_mux_wrap_4.DATA_WIDTH=8 -P p4_mux_wrap_4.KEEP_ENABLE=0 -P p4_mux_wrap_4.KEEP_WIDTH=1 -P p4_mux_wrap_4.ID_ENABLE=1 -P p4_mux_wrap_4.M_ID_WIDTH=10 -P p4_mux_wrap_4.S_ID_WIDTH=8 -P p4_mux_wrap_4.DEST_ENABLE=1 -P p4_mux_wrap_4.DEST_WIDTH=8 -P p4_mux_wrap_4.USER_ENABLE=1 -P p4_mux_wrap_4.USER_WIDTH=1 -P p4_mux_wrap_4.LAST_ENABLE=1 -P p4_mux_wrap_4.UPDATE_TID=1 -P p4_mux_wrap_4.ARB_TYPE_ROUND_ROBIN=0 -P p4_mux_wrap_4.ARB_LSB_HIGH_PRIORITY=1 -f sim_build/cmds.f -g2012   p4_mux_wrap_4.v ../../rtl/p4_mux.v ../../lib/axis/rtl/axis_arb_mux.v ../../lib/axis/rtl/axis_mux.v ../../lib/axis/rtl/arbiter.v ../../lib/axis/rtl/priority_encoder.v
+ 
+rm -f results.xml
+MODULE=testbench TESTCASE= TOPLEVEL=p4_mux_wrap_4 TOPLEVEL_LANG=verilog \
+         /usr/bin/vvp -M /usr/local/lib/python3.8/dist-packages/cocotb/libs -m libcocotbvpi_icarus   sim_build/sim.vvp -fst
+ 
+test -f results.xml || (echo "ERROR: results.xml was not written by the simulation!" >&2 && exit 1)
+make[3]: Leaving directory '/home/linjw16/E/Program_Files/prj/utilities/verilog/tb/p4_mux'
+ 
+make[2]: Leaving directory '/home/linjw16/E/Program_Files/prj/utilities/verilog/tb/p4_mux'
+make -C p4_demux/. 
+ 
+make[2]: Entering directory '/home/linjw16/E/Program_Files/prj/utilities/verilog/tb/p4_demux'
+ 
+rm -f results.xml
+make -f Makefile results.xml
+ 
+make[3]: Entering directory '/home/linjw16/E/Program_Files/prj/utilities/verilog/tb/p4_demux'
+ 
+./p4_demux_wrap.py -p 4
+ 
+mkdir -p sim_build
+ 
+echo "+timescale+1ns/1ps" > sim_build/cmds.f
+/usr/bin/iverilog -o sim_build/sim.vvp -D COCOTB_SIM=1 -s p4_demux_wrap_4 -P p4_demux_wrap_4.DATA_WIDTH=8 -P p4_demux_wrap_4.KEEP_ENABLE=0 -P p4_demux_wrap_4.KEEP_WIDTH=1 -P p4_demux_wrap_4.ID_ENABLE=1 -P p4_demux_wrap_4.ID_WIDTH=8 -P p4_demux_wrap_4.DEST_ENABLE=1 -P p4_demux_wrap_4.S_DEST_WIDTH=10 -P p4_demux_wrap_4.M_DEST_WIDTH=8 -P p4_demux_wrap_4.USER_ENABLE=1 -P p4_demux_wrap_4.USER_WIDTH=1 -P p4_demux_wrap_4.TDEST_ROUTE=1 -f sim_build/cmds.f -g2012   p4_demux_wrap_4.v ../../rtl/p4_demux.v ../../lib/axis/rtl/axis_demux.v
+ 
+rm -f results.xml
+MODULE=testbench TESTCASE= TOPLEVEL=p4_demux_wrap_4 TOPLEVEL_LANG=verilog \
+         /usr/bin/vvp -M /usr/local/lib/python3.8/dist-packages/cocotb/libs -m libcocotbvpi_icarus   sim_build/sim.vvp -fst
+test -f results.xml || (echo "ERROR: results.xml was not written by the simulation!" >&2 && exit 1)
+ 
+make[3]: Leaving directory '/home/linjw16/E/Program_Files/prj/utilities/verilog/tb/p4_demux'
+ 
+make[2]: Leaving directory '/home/linjw16/E/Program_Files/prj/utilities/verilog/tb/p4_demux'
+ 
+make[1]: Leaving directory '/home/linjw16/E/Program_Files/prj/utilities/verilog/tb'
+make -C rtl/. 
+ 
+make: *** [Makefile:10: tb/.] Error 2
+
+make[1]: Entering directory '/home/linjw16/E/Program_Files/prj/utilities/verilog/rtl'
+make[1]: Leaving directory '/home/linjw16/E/Program_Files/prj/utilities/verilog/rtl'
+ 
+make[1]: *** No targets specified and no makefile found.  Stop.
+make: *** [Makefile:10: rtl/.] Error 2
+
+make -C lib/. 
+ 
+make[1]: Entering directory '/home/linjw16/E/Program_Files/prj/utilities/verilog/lib'
+make[1]: Leaving directory '/home/linjw16/E/Program_Files/prj/utilities/verilog/lib'
+ 
+make: Leaving directory '/home/linjw16/E/Program_Files/prj/utilities/verilog'
+ 
+make[1]: *** No targets specified and no makefile found.  Stop.
+make: *** [Makefile:10: lib/.] Error 2
+
